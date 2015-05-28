@@ -1,3 +1,18 @@
+# Adobe Fork of deric-mesos 
+This project is part of Adobe HSTACK project group.
+
+##Source: 
+* https://git.corp.adobe.com/metal-cell/puppet-mesos
+
+## JIRA project
+* https://jira.corp.adobe.com/browse/HSTACK
+* Component: [**puppet-mesos**](https://jira.corp.adobe.com/browse/HSTACK/component)
+
+## Contributing Guide
+Check [Contributors Guide](http://saasbase.corp.adobe.com/guides/saasbase_contributors.html)
+
+
+
 # Mesos Puppet Module
 [![Puppet
 Forge](http://img.shields.io/puppetforge/v/deric/mesos.svg)](https://forge.puppetlabs.com/deric/mesos) [![Build Status](https://travis-ci.org/deric/puppet-mesos.png)](https://travis-ci.org/deric/puppet-mesos) [![Puppet Forge

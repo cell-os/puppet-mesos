@@ -1,12 +1,12 @@
 {
-  "name": "deric-mesos",
-  "version": "0.8.1",
+  "name": "puppet-mesos",
+  "version": "0.8.1-adobe-1",
   "author": "Tomas Barton",
-  "summary": "Module managing Mesos master and slave instalation",
+  "summary": "Adobe HSTACK Fork: Module managing Mesos master and slave instalation",
   "license": "Apache-2.0",
-  "source": "http://github.com/deric/puppet-mesos",
-  "project_page": "http://github.com/deric/puppet-mesos",
-  "issues_url": "https://github.com/deric/puppet-mesos/issues",
+  "source": "https://git.corp.adobe.com/metal-cell/puppet-mesos",
+  "project_page": "https://git.corp.adobe.com/metal-cell/puppet-mesos",
+  "issues_url": "https://jira.corp.adobe.com/browse/HSTACK",
   "description": "Apache Mesos is a cluster manager that provides efficient resource isolation and sharing across distributed applications",
   "dependencies": [
     {
