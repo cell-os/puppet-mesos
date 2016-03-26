@@ -23,7 +23,7 @@ class mesos::master(
   $enable           = true,
   $cluster          = 'mesos',
   $conf_dir         = '/etc/mesos-master',
-  $work_dir         = '/var/lib/mesos', # registrar directory, since 0.19
+  $work_dir         = '/var/lib/mesos/master', # registrar directory, since 0.19
   $conf_file        = '/etc/default/mesos-master',
   $acls_file        = '/etc/mesos/acls',
   $credentials_file = '/etc/mesos/master-credentials',
@@ -96,7 +96,9 @@ class mesos::master(
     group   => $group,
   }
 
-  file { $conf_dir:
+  # TODO this duplicated in master / slave. move up
+  common::mkdir_p { $work_dir: } ->
+  file { $work_dir:
     ensure  => directory,
   }
 
@@ -108,10 +110,6 @@ class mesos::master(
     purge   => true,
     force   => true,
     require => Class['::mesos::install'],
-  }
-
-  file { $work_dir:
-    ensure => directory,
   }
 
   file { $acls_file:
